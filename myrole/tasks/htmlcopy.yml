@@ -1,0 +1,7 @@
+---
+- name: copy html pages
+  copy:
+    src: files/
+    dest: /var/www/html/
+    force: yes
+  become: yes

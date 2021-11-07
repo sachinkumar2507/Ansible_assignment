@@ -1,0 +1,8 @@
+---
+- name: ansibleprac
+  hosts: remote
+  become: yes
+  gather_facts: false
+  roles:
+    - myrole
+    

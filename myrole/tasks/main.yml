@@ -1,0 +1,9 @@
+---
+# tasks file for myrole
+- import_tasks: nginx.yml
+  notify:
+    -  start nginx
+
+- import_tasks: htmlcopy.yml
+  notify:
+    -  restart nginx
